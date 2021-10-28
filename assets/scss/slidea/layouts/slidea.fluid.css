@@ -1,0 +1,16 @@
+/**
+ |--------------------------------------------------------------------------
+ | Slidea Fluid Layout
+ |--------------------------------------------------------------------------
+ | Plugin Type: jQuery
+ | License: CodeCanyon Standard / Extended
+ | Author: Alex Grozav
+ | Website: http://plugins.grozav.com/slidea
+ | Email: alex@grozav.com
+ */
+/* line 12, slidea.fluid.scss */
+.slidea.slidea-fluid {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

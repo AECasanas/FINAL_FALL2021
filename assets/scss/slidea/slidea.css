@@ -1,0 +1,451 @@
+/**
+ |--------------------------------------------------------------------------
+ | Slidea
+ |--------------------------------------------------------------------------
+ | Plugin Type: jQuery
+ | License: CodeCanyon Standard / Extended
+ | Author: Alex Grozav
+ | Website: http://plugins.grozav.com/slidea
+ | Email: alex@grozav.com
+ */
+/**
+ |--------------------------------------------------------------------------
+ | Scaffolding
+ |--------------------------------------------------------------------------
+ */
+/* line 9, includes/_scaffolding.scss */
+.slidea .slide {
+  display: none;
+}
+
+/* line 13, includes/_scaffolding.scss */
+.slidea {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+/* line 434, ../materialize/components/_mixins.scss */
+.slidea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 30, includes/_scaffolding.scss */
+.slidea .slide {
+  display: none;
+}
+/* line 36, includes/_scaffolding.scss */
+.slidea .slidea-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  -ms-perspective: 1000px;
+  -o-perspective: 1000px;
+  perspective: 1000px;
+}
+/* line 48, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+/* line 60, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide.active {
+  z-index: 2;
+  display: block;
+}
+/* line 67, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide.previous {
+  z-index: 1;
+  display: block;
+}
+/* line 74, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-layer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* line 84, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-object.object-absolute {
+  width: 100%;
+  position: absolute;
+}
+/* line 92, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-content {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: table;
+  z-index: 999;
+}
+/* line 100, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-content.content-center {
+  top: 0;
+  height: 100%;
+  display: table;
+}
+/* line 104, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-content.content-center > ul, .slidea .slidea-inner .slidea-slide .slidea-content.content-center > div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+/* line 111, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-content.content-top {
+  top: 0;
+}
+/* line 115, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-content.content-bottom {
+  bottom: 0;
+}
+/* line 122, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+/* line 135, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-video-background {
+  z-index: 3;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+/* line 146, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-video {
+  width: 100%;
+  height: auto;
+}
+/* line 151, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide .slidea-video-cover {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 159, includes/_scaffolding.scss */
+.slidea .slidea-inner .slidea-slide iframe {
+  border: none;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Loader
+ |--------------------------------------------------------------------------
+ */
+/* line 7, includes/_loader.scss */
+.slidea .slidea-loader-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 999;
+}
+/* line 16, includes/_loader.scss */
+.slidea .slidea-loader-wrapper .slidea-loader {
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  display: block;
+}
+/* line 28, includes/_loader.scss */
+.slidea .slidea-loader-wrapper .slidea-loader .slidea-loader-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Progress
+ |--------------------------------------------------------------------------
+ */
+/* line 8, includes/_progress.scss */
+.slidea .slidea-progress {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 10px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+/* line 18, includes/_progress.scss */
+.slidea .slidea-progress.slidea-progress-top {
+  top: 0;
+}
+/* line 21, includes/_progress.scss */
+.slidea .slidea-progress.slidea-progress-bottom {
+  bottom: 0;
+}
+/* line 25, includes/_progress.scss */
+.slidea .slidea-progress .slidea-progress-bar {
+  height: 10px;
+  width: 0px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Controls
+ |--------------------------------------------------------------------------
+ */
+/* line 7, includes/_controls.scss */
+.slidea .slidea-control {
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
+}
+/* line 13, includes/_controls.scss */
+.slidea .slidea-control.slidea-next {
+  right: 0;
+}
+/* line 16, includes/_controls.scss */
+.slidea .slidea-control.slidea-next .slidea-control-text {
+  float: right;
+}
+/* line 20, includes/_controls.scss */
+.slidea .slidea-control.slidea-next .slidea-control-thumbnail {
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transform: translateX(0%);
+  -moz-transform: translateX(0%);
+  -ms-transform: translateX(0%);
+  -o-transform: translateX(0%);
+  transform: translateX(0%);
+}
+/* line 26, includes/_controls.scss */
+.slidea .slidea-control.slidea-next:hover .slidea-control-thumbnail {
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 32, includes/_controls.scss */
+.slidea .slidea-control.slidea-prev {
+  left: 0;
+}
+/* line 35, includes/_controls.scss */
+.slidea .slidea-control.slidea-prev .slidea-control-text {
+  float: left;
+}
+/* line 39, includes/_controls.scss */
+.slidea .slidea-control.slidea-prev .slidea-control-thumbnail {
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 45, includes/_controls.scss */
+.slidea .slidea-control.slidea-prev:hover .slidea-control-thumbnail {
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+  -webkit-transform: translateX(40px);
+  -moz-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  -o-transform: translateX(40px);
+  transform: translateX(40px);
+}
+/* line 52, includes/_controls.scss */
+.slidea .slidea-control .slidea-control-inner {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+/* line 60, includes/_controls.scss */
+.slidea .slidea-control .slidea-control-inner .slidea-control-text {
+  line-height: 80px;
+  height: 80px;
+  width: 40px;
+  z-index: 5;
+  position: relative;
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 75, includes/_controls.scss */
+.slidea .slidea-control .slidea-control-inner .slidea-control-text:hover {
+  text-decoration: none;
+}
+/* line 80, includes/_controls.scss */
+.slidea .slidea-control .slidea-control-inner .slidea-control-thumbnail {
+  position: absolute;
+  display: block;
+  height: 100%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+/* line 86, includes/_controls.scss */
+.slidea .slidea-control .slidea-control-inner .slidea-control-thumbnail .slidea-control-image {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Pagination
+ |--------------------------------------------------------------------------
+ */
+/* line 9, includes/_pagination.scss */
+.slidea-pagination {
+  z-index: 3;
+  width: 100%;
+  display: block;
+  text-align: center;
+  height: auto;
+}
+/* line 16, includes/_pagination.scss */
+.slidea-pagination.slidea-pagination-inside {
+  position: absolute;
+  height: 20px;
+  left: 0;
+  bottom: 50px;
+}
+/* line 23, includes/_pagination.scss */
+.slidea-pagination.slidea-pagination-outside {
+  position: relative;
+  margin: 25px auto;
+  display: block;
+}
+/* line 29, includes/_pagination.scss */
+.slidea-pagination .slidea-pagination-bullet {
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+}
+/* line 42, includes/_pagination.scss */
+.slidea-pagination .slidea-pagination-bullet.active {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  background: white;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Controls
+ |--------------------------------------------------------------------------
+ */
+/* line 6, includes/_thumbnails.scss */
+.slidea-thumbnails {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 0 25px;
+  overflow: hidden;
+}
+/* line 14, includes/_thumbnails.scss */
+.slidea-thumbnails-inner {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+/* line 20, includes/_thumbnails.scss */
+.slidea-thumbnails-inner .slidea-thumbnail-wrapper {
+  height: auto;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+/* line 26, includes/_thumbnails.scss */
+.slidea-thumbnails-inner .slidea-thumbnail-wrapper .slidea-thumbnail {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: block;
+}

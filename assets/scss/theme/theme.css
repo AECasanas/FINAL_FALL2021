@@ -1,0 +1,604 @@
+/**
+ |--------------------------------------------------------------------------
+ | Theme
+ |--------------------------------------------------------------------------
+ | Template Type: HTML5 & CSS3
+ | License: ThemeForest Standard / Extended
+ | Author: Alex Grozav
+ | Website: http://plugins.grozav.com/theme
+ | Email: alex@grozav.com
+ */
+/**
+ |--------------------------------------------------------------------------
+ | General
+ |--------------------------------------------------------------------------
+ */
+/* line 7, includes/_general.scss */
+body, html {
+  width: 100%;
+}
+
+/* line 11, includes/_general.scss */
+#slidea {
+  margin-top: 80px;
+}
+
+/* line 16, includes/_general.scss */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* line 21, includes/_general.scss */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* line 26, includes/_general.scss */
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.33);
+}
+
+/* line 31, includes/_general.scss */
+.hidden {
+  display: none;
+}
+
+/* line 35, includes/_general.scss */
+.scroll-up {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  color: #2a3133;
+  font-size: 27px;
+  display: block;
+  visibility: hidden;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background-clip: padding-box;
+  background: #ffffff;
+  border: solid 1px #e7e7e7;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}
+/* line 54, includes/_general.scss */
+.scroll-up.visible {
+  visibility: visible;
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+/* line 59, includes/_general.scss */
+.scroll-up:hover {
+  background: #FF1744;
+  border-color: #FF1744;
+  color: #ffffff;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 68, includes/_general.scss */
+  .resize-subheading {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 73, includes/_general.scss */
+  .resize-heading {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+
+/* line 81, includes/_general.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 84, includes/_general.scss */
+.full-height {
+  height: 100%;
+}
+
+/* line 88, includes/_general.scss */
+.row-spacing {
+  margin: 80px auto;
+}
+
+/* line 92, includes/_general.scss */
+.background-spacing {
+  padding: 80px 0;
+}
+
+/* line 96, includes/_general.scss */
+.testimonials-spacing {
+  padding: 80px 0 20px;
+}
+
+/* line 100, includes/_general.scss */
+.text-spacing {
+  margin: 30px auto;
+}
+
+/* line 104, includes/_general.scss */
+.thin-text {
+  font-weight: 300 !important;
+}
+
+/* line 108, includes/_general.scss */
+.margin-none {
+  margin: 0;
+}
+
+/* line 112, includes/_general.scss */
+.margin-top {
+  margin-top: 80px;
+}
+
+/* line 115, includes/_general.scss */
+.margin-right {
+  margin-right: 10px;
+}
+
+/* line 119, includes/_general.scss */
+.padding-small {
+  padding: 4px 8px;
+}
+
+/* line 123, includes/_general.scss */
+.movebox {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  margin: 0;
+  line-height: 75px;
+  text-align: center;
+  position: relative;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background-clip: padding-box;
+}
+/* line 132, includes/_general.scss */
+.movebox:nth-child(1) {
+  margin-right: 50px;
+}
+
+/* line 139, includes/_general.scss */
+.copyright {
+  display: inline-block;
+  line-height: 28px;
+}
+
+/* line 144, includes/_general.scss */
+.social-btn {
+  float: right;
+  padding: 5px 20px;
+  margin: 0px 0 0 0;
+  height: auto;
+  line-height: 18px !important;
+}
+
+/* line 152, includes/_general.scss */
+.table-display {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 158, includes/_general.scss */
+.table-cell-display {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 163, includes/_general.scss */
+.features {
+  line-height: 200%;
+}
+/* line 165, includes/_general.scss */
+.features i {
+  margin-right: 5px;
+}
+
+/* line 170, includes/_general.scss */
+.wantlink {
+  display: block;
+  margin: 0;
+  width: 100%;
+  position: relative;
+}
+
+/* line 177, includes/_general.scss */
+.pb-footer {
+  display: block;
+  padding: 20px 0;
+}
+/* line 180, includes/_general.scss */
+.pb-footer .row {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* line 184, includes/_general.scss */
+.pb-footer.pb-footer-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* line 192, includes/_general.scss */
+.text-white {
+  color: #ffffff;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Slidea
+ |--------------------------------------------------------------------------
+ */
+/* line 9, includes/_slidea.scss */
+.slidea .slidea-cloud-header {
+  font-weight: 300;
+  display: inline-block;
+  margin: 0;
+}
+/* line 14, includes/_slidea.scss */
+.slidea .slidea-cloud-text {
+  position: absolute;
+  margin: 0;
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(0) {
+  -webkit-transform: translateY(-200%);
+  -moz-transform: translateY(-200%);
+  -ms-transform: translateY(-200%);
+  -o-transform: translateY(-200%);
+  transform: translateY(-200%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(1) {
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(2) {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(3) {
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  transform: translateY(100%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(4) {
+  -webkit-transform: translateY(200%);
+  -moz-transform: translateY(200%);
+  -ms-transform: translateY(200%);
+  -o-transform: translateY(200%);
+  transform: translateY(200%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(5) {
+  -webkit-transform: translateY(300%);
+  -moz-transform: translateY(300%);
+  -ms-transform: translateY(300%);
+  -o-transform: translateY(300%);
+  transform: translateY(300%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(6) {
+  -webkit-transform: translateY(400%);
+  -moz-transform: translateY(400%);
+  -ms-transform: translateY(400%);
+  -o-transform: translateY(400%);
+  transform: translateY(400%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(7) {
+  -webkit-transform: translateY(500%);
+  -moz-transform: translateY(500%);
+  -ms-transform: translateY(500%);
+  -o-transform: translateY(500%);
+  transform: translateY(500%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(8) {
+  -webkit-transform: translateY(600%);
+  -moz-transform: translateY(600%);
+  -ms-transform: translateY(600%);
+  -o-transform: translateY(600%);
+  transform: translateY(600%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(9) {
+  -webkit-transform: translateY(700%);
+  -moz-transform: translateY(700%);
+  -ms-transform: translateY(700%);
+  -o-transform: translateY(700%);
+  transform: translateY(700%);
+}
+/* line 19, includes/_slidea.scss */
+.slidea .slidea-cloud-text:nth-child(10) {
+  -webkit-transform: translateY(800%);
+  -moz-transform: translateY(800%);
+  -ms-transform: translateY(800%);
+  -o-transform: translateY(800%);
+  transform: translateY(800%);
+}
+/* line 24, includes/_slidea.scss */
+.slidea .slidea-cloud-final {
+  position: absolute;
+  margin: 0;
+  z-index: 2;
+}
+/* line 31, includes/_slidea.scss */
+.slidea .slidea-fill {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  top: 0;
+}
+/* line 40, includes/_slidea.scss */
+.slidea .slidea-animated-shape {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -50px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  background: #fff;
+  z-index: 999;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-clip: padding-box;
+}
+
+/**
+ |--------------------------------------------------------------------------
+ | Navbar
+ |--------------------------------------------------------------------------
+ */
+/* line 15, includes/_navbar.scss */
+.pb-navbar {
+  z-index: 9999;
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+/* line 28, includes/_navbar.scss */
+.pb-navbar.collapse .pb-nav {
+  margin-top: -80px;
+}
+/* line 32, includes/_navbar.scss */
+.pb-navbar.collapse .pb-nav.open {
+  margin-top: 0;
+}
+/* line 37, includes/_navbar.scss */
+.pb-navbar .pb-logo-wrapper {
+  height: 80px;
+  width: 120px;
+  display: table;
+  float: left;
+}
+@media screen and (max-width: 768px) {
+  /* line 37, includes/_navbar.scss */
+  .pb-navbar .pb-logo-wrapper {
+    width: 100%;
+  }
+}
+/* line 47, includes/_navbar.scss */
+.pb-navbar .pb-logo-wrapper .pb-logo-overlay {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  /* line 47, includes/_navbar.scss */
+  .pb-navbar .pb-logo-wrapper .pb-logo-overlay {
+    display: block;
+  }
+}
+/* line 59, includes/_navbar.scss */
+.pb-navbar .pb-logo-wrapper .pb-logo-overlay-icon {
+  font-size: 24px;
+  position: absolute;
+  right: 10px;
+  top: 24px;
+  color: grey;
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  /* line 59, includes/_navbar.scss */
+  .pb-navbar .pb-logo-wrapper .pb-logo-overlay-icon {
+    -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+    filter: "alpha(opacity=(${iefactor}))";
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+  }
+}
+/* line 72, includes/_navbar.scss */
+.pb-navbar .pb-logo-wrapper:hover .pb-logo-overlay-icon {
+  color: black;
+}
+/* line 76, includes/_navbar.scss */
+.pb-navbar .pb-logo-wrapper .pb-logo {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  /* line 76, includes/_navbar.scss */
+  .pb-navbar .pb-logo-wrapper .pb-logo {
+    text-align: center;
+  }
+}
+/* line 82, includes/_navbar.scss */
+.pb-navbar .pb-logo-wrapper .pb-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  /* line 82, includes/_navbar.scss */
+  .pb-navbar .pb-logo-wrapper .pb-logo img {
+    width: 120px;
+    margin: 0 auto;
+  }
+}
+/* line 97, includes/_navbar.scss */
+.pb-navbar .pb-nav {
+  width: auto;
+  height: 80px;
+  float: right;
+  margin: 0;
+  -webkit-transform: all 0.5s ease;
+  -moz-transform: all 0.5s ease;
+  -ms-transform: all 0.5s ease;
+  -o-transform: all 0.5s ease;
+  transform: all 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  /* line 97, includes/_navbar.scss */
+  .pb-navbar .pb-nav {
+    float: left;
+    width: 100%;
+  }
+}
+/* line 110, includes/_navbar.scss */
+.pb-navbar .pb-nav .pb-nav-item {
+  display: inline-block;
+}
+@media screen and (max-width: 768px) {
+  /* line 110, includes/_navbar.scss */
+  .pb-navbar .pb-nav .pb-nav-item {
+    display: block;
+    background: white;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid lightgrey;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+  }
+}
+/* line 123, includes/_navbar.scss */
+.pb-navbar .pb-nav .pb-nav-item a {
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+  /* line 123, includes/_navbar.scss */
+  .pb-navbar .pb-nav .pb-nav-item a {
+    height: 60px;
+    line-height: 60px;
+  }
+}
+/* line 137, includes/_navbar.scss */
+.pb-navbar .pb-nav .pb-nav-item a:hover {
+  background: #f2f2f2;
+}
+/* line 143, includes/_navbar.scss */
+.pb-navbar .pb-nav .pb-nav-item.active a {
+  font-weight: bold;
+  color: #ff1744 !important;
+  border-bottom: 3px solid #ff1744;
+}
+@media screen and (max-width: 768px) {
+  /* line 143, includes/_navbar.scss */
+  .pb-navbar .pb-nav .pb-nav-item.active a {
+    border-bottom: none;
+  }
+}
+
+/* line 2, includes/_presentation.scss */
+.presentation-animation {
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 80%;
+  float: right;
+  background: url("../../img/fluid/slide-3.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+/* line 14, includes/_presentation.scss */
+.presentation-animation-object {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  -ms-filter: "progid:DXImageTransform@mixin Microsoft@mixin Alpha(Opacity=${iefactor})";
+  filter: "alpha(opacity=(${iefactor}))";
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+}

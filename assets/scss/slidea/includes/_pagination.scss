@@ -1,0 +1,49 @@
+/**
+ |--------------------------------------------------------------------------
+ | Pagination
+ |--------------------------------------------------------------------------
+ */
+$bullet-size: 10px;
+$bullet-margin: 10px;
+
+.slidea-pagination {
+    z-index: 3;
+    width: 100%;
+    display: block;
+    text-align: center;
+    height: auto;
+
+    &.slidea-pagination-inside {
+        position: absolute;
+        height: $bullet-size + $bullet-margin;
+        left: 0;
+        bottom: 50px;
+    }
+
+    &.slidea-pagination-outside {
+        position: relative;
+        margin: 25px auto;
+        display: block;
+    }
+
+    .slidea-pagination-bullet {
+        display: inline-block;
+        position: relative;
+        width: $bullet-size;
+        height: $bullet-size;
+        background: rgba(255, 255, 255, 0.5);
+        margin: $bullet-margin;
+        z-index: 999;
+        cursor: pointer;
+
+        @include transition(all 0.5s ease);
+        @include border-radius(100%);
+
+        &.active {
+            @include scale(1.5);
+            background: rgba(255, 255, 255, 1);
+        }
+    }
+}
+
+

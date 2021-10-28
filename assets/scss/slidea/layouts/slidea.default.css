@@ -1,0 +1,15 @@
+/**
+ |--------------------------------------------------------------------------
+ | Slidea Default Layout
+ |--------------------------------------------------------------------------
+ | Plugin Type: jQuery
+ | License: CodeCanyon Standard / Extended
+ | Author: Alex Grozav
+ | Website: http://plugins.grozav.com/slidea
+ | Email: alex@grozav.com
+ */
+/* line 12, slidea.default.scss */
+.slidea.slidea-default {
+  width: 100%;
+  height: auto;
+}

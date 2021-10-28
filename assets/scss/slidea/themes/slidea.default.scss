@@ -1,0 +1,377 @@
+/**
+ |--------------------------------------------------------------------------
+ | Bitslide Default Theme
+ |--------------------------------------------------------------------------
+ */
+@import "../../materialize/components/mixins";
+// Loader
+$starting-height: 800px;
+$loader-background: #181619;
+// Progress Bar
+$progress-bar-height: 5px;
+$progress-background: rgba(255, 255, 255, 0.5);
+$progress-bar-background: rgba(255, 255, 255, 1);
+$progress-dark-background: rgba(0, 0, 0, 0.25);
+$progress-bar-dark-background: rgba(0, 0, 0, 0.5);
+// Controls
+$control-height: 108px;
+$control-width: 54px;
+$control-background: #fff;
+$control-background-hover: #fff;
+$control-font-size: 18px;
+$control-font-color: #181619;
+$control-font-color-hover: #181619;
+$control-dark-background: #181619;
+$control-dark-background-hover: #181619;
+$control-dark-font-color: #fff;
+$control-dark-font-color-hover: #fff;
+$control-slider-opacity: 0;
+$control-slider-hover-opacity: 1;
+$control-opacity: 0.33;
+$control-opacity-hover: 1;
+$control-transition-speed: 0.5s;
+// Pagination
+$pagination-outside-margin: 50px auto;
+$pagination-slider-opacity: 0;
+$pagination-slider-hover-opacity: 1;
+$pagination-bullet-width: 10px;
+$pagination-bullet-height: 10px;
+$pagination-bullet-radius: 100%;
+$pagination-bullet-margin: 10px;
+$pagination-light-bullet-background: rgba(255, 255, 255, 0.5);
+$pagination-light-bullet-active-background: rgba(255, 255, 255, 1);
+$pagination-light-bullet-active-scale: 1.5;
+$pagination-dark-bullet-background: rgba(0, 0, 0, 0.25);
+$pagination-dark-bullet-active-background: rgba(0, 0, 0, 0.65);
+$pagination-dark-bullet-active-scale: 1.5;
+// Thumbnails
+$thumbnails-background: #000;
+$thumbnails-opacity: 0.5;
+$thumbnails-opacity-hover: 1;
+$thumbnails-scale: 0.85;
+$thumbnails-scale-active: 1;
+$thumbnails-transition-speed: 0.3s;
+//Scroller
+$scroller-color: #fff;
+$scroller-border-width: 2px;
+$scroller-border-radius: 13px;
+$scroller-height: 50px;
+$scroller-width: 26px;
+$scroller-background: transparent;
+$scroller-bullet-size: 8px;
+$scroller-margin: 25px;
+
+.slidea {
+    background: $loader-background;
+    height: $starting-height;
+    @media screen and (max-width: 767px) {
+        height: $starting-height * 1/2;
+    }
+    @media screen and (max-width: 979px) {
+        height: $starting-height * 3/5;
+    }
+    @media screen and (max-width: 1200px) {
+        height: $starting-height * 3/4;
+    }
+
+    .slidea-loader-wrapper {
+        background: $loader-background;
+    }
+
+    .slidea-progress {
+        height: $progress-bar-height;
+        .slidea-progress-bar {
+            height: $progress-bar-height;
+        }
+
+        &.slidea-progress-light {
+            background: $progress-background;
+            .slidea-progress-bar {
+                background: $progress-bar-background;
+            }
+        }
+
+        &.slidea-progress-dark {
+            background: $progress-dark-background;
+            .slidea-progress-bar {
+                background: $progress-bar-dark-background;
+            }
+        }
+    }
+
+    &:hover .slidea-control {
+        @include opacity($control-slider-hover-opacity);
+    }
+
+    .slidea-control {
+        @include opacity($control-slider-opacity);
+        height: $control-height;
+        width: $control-width;
+        margin-top: -$control-height/2;
+        @include transition(all $control-transition-speed ease-out);
+
+        .slidea-control-inner {
+            .slidea-control-text {
+                @include opacity($control-opacity);
+                line-height: $control-height;
+                height: $control-height;
+                width: $control-width;
+                font-size: $control-font-size;
+            }
+        }
+
+        &:hover {
+            .slidea-control-inner {
+                .slidea-control-text {
+                    @include opacity($control-opacity-hover);
+                }
+            }
+        }
+
+        &.slidea-prev:hover {
+            .slidea-control-inner {
+                .slidea-control-thumbnail {
+                    @include transform(translateX($control-width));
+                }
+            }
+        }
+    }
+
+    .slidea-control.slidea-controls-light {
+        .slidea-control-inner {
+            .slidea-control-text {
+                background: $control-background;
+                color: $control-font-color;
+            }
+        }
+    }
+
+    .slidea-control.slidea-controls-light:hover {
+        .slidea-control-inner {
+            .slidea-control-text {
+                background: $control-background-hover;
+                color: $control-font-color-hover;
+            }
+        }
+    }
+
+    .slidea-control.slidea-controls-dark {
+        .slidea-control-inner {
+            .slidea-control-text {
+                background: $control-dark-background;
+                color: $control-dark-font-color;
+            }
+        }
+    }
+
+    .slidea-control.slidea-controls-dark:hover {
+        .slidea-control-inner {
+            .slidea-control-text {
+                background: $control-dark-background-hover;
+                color: $control-dark-font-color-hover;
+            }
+        }
+    }
+
+    .slidea-control.slidea-controls-alternate {
+        .slidea-control-inner {
+            .slidea-control-text {
+                background: $control-dark-background-hover;
+                color: $control-dark-font-color-hover;
+            }
+        }
+    }
+
+    .slidea-control.slidea-controls-alternate:hover {
+        .slidea-control-inner {
+            .slidea-control-text {
+                background: $control-background-hover;
+                color: $control-font-color-hover;
+            }
+        }
+    }
+
+
+    .slidea-scroller-wrapper {
+        position: absolute;
+
+        &.slidea-scroller{
+            &-left{
+                left: $scroller-margin;
+            }
+            &-center{
+                left: 50%;
+                margin-left: -$scroller-width / 2;
+            }
+            &-right{
+                right: $scroller-margin;
+            }
+        }
+
+        cursor: pointer;
+        z-index: 4;
+    }
+
+    .slidea-scroller-1 {
+        display: block;
+        width: $scroller-width;
+        height: $scroller-height;
+
+        @include transition(all 0.5s ease);
+        &:hover{
+            @include transform(scale(1.5) translateY(-5px))
+        }
+
+        &::after{
+            content: "";
+            display: block;
+            width: $scroller-width / 2 + $scroller-border-width;
+            height: $scroller-width / 2 + $scroller-border-width;
+            border-bottom: $scroller-border-width solid $scroller-color;
+            border-left: $scroller-border-width solid $scroller-color;
+            margin-left: $scroller-width / 2 - $scroller-bullet-size;
+            margin-top: $scroller-height / 2;
+            @include transform(rotate(-45deg));
+        }
+
+        &::before {
+            content: "";
+            display: block;
+            height: $scroller-bullet-size;
+            width: $scroller-bullet-size;
+            margin-left: $scroller-width / 2 - $scroller-bullet-size / 2;
+            margin-top: 5px;
+            border-radius: 100%;
+            background: $scroller-color;
+            @include animation(slideascroller1 1.5s linear infinite);
+        }
+    }
+
+
+        .slidea-scroller-2 {
+            display: block;
+            border-style: solid;
+            border-width: $scroller-border-width;
+            border-color: $scroller-color;
+            width: $scroller-width;
+            height: $scroller-height;
+            border-radius: $scroller-border-radius;
+            background: $scroller-background;
+
+            &::before {
+                content: "";
+                display: block;
+                height: $scroller-bullet-size;
+                width: $scroller-bullet-size;
+                margin-left: $scroller-width / 2 - $scroller-border-width - $scroller-bullet-size / 2;
+                margin-top: 5px;
+                border-radius: 100%;
+                background: $scroller-color;
+                @include animation(slideascroller2 1.5s linear infinite);
+            }
+        }
+
+}
+
+@include keyframes(slideascroller1) {
+    0% {
+        @include opacity(0);
+        @include transform(scale(0) translateY(0));
+    }
+    75%{
+        @include opacity(1);
+    }
+    100% {
+        @include opacity(0);
+        @include transform(scale(1) translateY($scroller-height - $scroller-bullet-size - $scroller-border-width - 10px));
+    }
+}
+
+
+@include keyframes(slideascroller2) {
+    0% {
+        @include opacity(0);
+        @include transform(scale(0) translateY(0));
+    }
+    10%{
+        @include transform(scale(1) translateY(0));
+        @include opacity(1);
+    }
+    65%{
+        @include opacity(1);
+    }
+    100% {
+        @include opacity(0);
+        @include transform(translateY($scroller-height - $scroller-bullet-size - $scroller-border-width - 10px));
+    }
+}
+
+.slidea-pagination {
+    @include opacity($pagination-slider-opacity);
+    @include transition(all $control-transition-speed ease-out);
+
+    &.slidea-pagination-inside {
+        height: $pagination-bullet-height + $pagination-bullet-margin;
+    }
+
+    &.slidea-pagination-outside {
+        @include opacity(1);
+        margin: $pagination-outside-margin;
+    }
+
+    &.slidea-pagination-light {
+        .slidea-pagination-bullet {
+            background: $pagination-light-bullet-background;
+            &.active {
+                @include scale($pagination-light-bullet-active-scale);
+                background: $pagination-light-bullet-active-background;
+            }
+        }
+    }
+
+    &.slidea-pagination-dark {
+        .slidea-pagination-bullet {
+            background: $pagination-dark-bullet-background;
+            &.active {
+                @include scale($pagination-dark-bullet-active-scale);
+                background: $pagination-dark-bullet-active-background;
+            }
+        }
+    }
+
+    .slidea-pagination-bullet {
+        height: $pagination-bullet-height;
+        width: $pagination-bullet-width;
+        margin: $pagination-bullet-margin;
+        @include border-radius($pagination-bullet-radius);
+    }
+}
+
+.slidea-thumbnails {
+    background: $thumbnails-background;
+    &-inner {
+        display: block;
+        margin: 0;
+        .slidea-thumbnail-wrapper {
+
+            .slidea-thumbnail {
+                @include scale($thumbnails-scale);
+                @include opacity($thumbnails-opacity);
+                @include transition(all $thumbnails-transition-speed ease-out);
+            }
+
+            &:hover {
+                .slidea-thumbnail {
+                    @include opacity($thumbnails-opacity-hover);
+                }
+            }
+
+            &.active {
+                .slidea-thumbnail {
+                    @include opacity($thumbnails-opacity-hover);
+                    @include scale($thumbnails-scale-active);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+/**
+ |--------------------------------------------------------------------------
+ | Progress
+ |--------------------------------------------------------------------------
+ */
+
+.slidea {
+    .slidea-progress {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 10px;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        z-index: 3;
+
+        &.slidea-progress-top {
+            top: 0;
+        }
+        &.slidea-progress-bottom {
+            bottom: 0;
+        }
+
+        .slidea-progress-bar {
+            height: 10px;
+            width: 0px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}

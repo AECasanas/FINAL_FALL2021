@@ -1,0 +1,53 @@
+/**
+ |--------------------------------------------------------------------------
+ | Slidea
+ |--------------------------------------------------------------------------
+ */
+.slidea{
+
+    // Word Cloud
+    .slidea-cloud-header{
+        font-weight: 300;
+        display: inline-block;
+        margin: 0;
+    }
+    .slidea-cloud-text{
+        position: absolute;
+        margin: 0;
+
+        @for $i from 0 through 10 {
+            &:nth-child(#{$i}){
+                @include transform(translateY(100% * ($i - 2)));
+            }
+        }
+    }
+    .slidea-cloud-final{
+        position: absolute;
+        margin: 0;
+        z-index: 2;
+    }
+
+    // Filled objects
+    .slidea-fill{
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        left: 20%;
+        top: 0;
+    }
+
+    // Animated blob
+    .slidea-animated-shape{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        margin-top: -50px;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+        display: block;
+        background: #fff;
+        z-index: 999;
+        @include border-radius(100%);
+    }
+}

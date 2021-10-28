@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta name="p:domain_verify" content="53b3ffffd336c800c36fb56e32d15c3b"/>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+
+<link rel="icon" type="images/ico" href="images/favicon.ico"></link> 
+<meta charset="utf-8">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-45873190-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<title> GENWWW_NYC </title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: xx-large;
+	color: #FFF;
+}
+body {
+	background-color: #000;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: xx-large;
+}
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #600;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+	text-align: right;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#apDiv1 {
+	position:absolute;
+	left:250px;
+	top:169px;
+	width:569px;
+	height:132px;
+	z-index:1;
+	vertical-align: bottom;
+	padding-top: 39px;
+	border-top-width: thin;
+	border-right-width: thin;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-style: none;
+	border-right-color: #006;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border-bottom-style: solid;
+	border-bottom-color: #009;
+}
+#apDiv2 {
+	position:absolute;
+	left:285px;
+	top:304px;
+	width:569px;
+	height:74px;
+	z-index:2;
+	font-size: large;
+	text-align: right;
+	border-right-width: thin;
+	border-right-style: none;
+	border-right-color: #009;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	border-bottom-width: thin;
+	border-bottom-style: none;
+	border-bottom-color: #009;
+}
+#apDiv3 {
+	position:absolute;
+	left:879px;
+	top:69px;
+	width:318px;
+	height:719px;
+	z-index:3;
+	background-color: #333;
+	text-align: center;
+	padding-top: 9px;
+	padding-right: 9px;
+}
+#apDiv4 {
+	position:absolute;
+	left:639px;
+	top:59px;
+	width:1px;
+	height:0px;
+	z-index:4;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#apDiv5 {
+	position:absolute;
+	left:629px;
+	top:668px;
+	width:210px;
+	height:1px;
+	z-index:5;
+	font-size: x-large;
+	text-align: right;
+	font-family: Verdana, Geneva, sans-serif;
+	line-height: normal;
+	border-right-width: thin;
+	border-right-style: solid;
+	border-right-color: #006;
+	padding-right: 19px;
+}
+#apDiv6 {
+	position:absolute;
+	left:69px;
+	top:889px;
+	width:499px;
+	height:619px;
+	z-index:6;
+	background-color: #333;
+	text-align: center;
+	padding-right: 9px;
+	padding-bottom: 9px;
+}
+#apDiv7 {
+	position:absolute;
+	left:490px;
+	top:721px;
+	width:194px;
+	height:212px;
+	z-index:7;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+}
+#apDiv8 {
+	position:absolute;
+	left:721px;
+	top:720px;
+	width:257px;
+	height:274px;
+	z-index:8;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+}
+#apDiv9 {
+	position:absolute;
+	left:176px;
+	top:740px;
+	width:193px;
+	height:547px;
+	z-index:7;
+}
+#apDiv10 {
+	position:absolute;
+	left:332px;
+	top:871px;
+	width:247px;
+	height:338px;
+	z-index:7;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: large;
+	text-align: right;
+}
+#apDiv11 {
+	position:absolute;
+	left:860px;
+	top:668px;
+	width:3px;
+	height:749px;
+	z-index:8;
+	background-color: #006;
+}
+#apDiv12 {
+	position:absolute;
+	left:79px;
+	top:869px;
+	width:247px;
+	height:471px;
+	z-index:8;
+	border-right-width: thin;
+	border-right-style: none;
+	border-right-color: #006;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: right;
+	font-size: large;
+	padding-right: 6px;
+}
+#apDiv13 {
+	position:absolute;
+	left:-519px;
+	top:-1171px;
+	width:106px;
+	height:0px;
+	z-index:9;
+}
+#apDiv14 {
+	position:absolute;
+	left:107px;
+	top:1366px;
+	width:289px;
+	height:143px;
+	z-index:10;
+}
+#apDiv15 {
+	position:absolute;
+	left:24px;
+	top:77px;
+	width:162px;
+	height:56px;
+	z-index:10;
+}
+#apDiv16 {
+	position:absolute;
+	left:269px;
+	top:1995px;
+	width:281px;
+	height:143px;
+	z-index:10;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#apDiv17 {
+	position:absolute;
+	left:589px;
+	top:1189px;
+	width:249px;
+	height:12px;
+	z-index:11;
+	border-bottom-width: thin;
+	border-bottom-style: solid;
+	border-bottom-color: #009;
+}
+#apDiv18 {
+	position:absolute;
+	left:73px;
+	top:2359px;
+	width:249px;
+	height:33px;
+	z-index:11;
+	font-size: small;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv19 {
+	position:absolute;
+	left:1433px;
+	top:2420px;
+	width:14px;
+	height:225px;
+	z-index:12;
+}
+#apDiv20 {
+	position:absolute;
+	left:629px;
+	top:1489px;
+	width:721px;
+	height:21px;
+	z-index:13;
+}
+#apDiv21 {
+	position:absolute;
+	left:659px;
+	top:699px;
+	width:166px;
+	height:120px;
+	z-index:14;
+}
+#apDiv22 {
+	position:absolute;
+	left:669px;
+	top:1499px;
+	width:268px;
+	height:54px;
+	z-index:15;
+	color: #CCC;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 41px;
+}
+#apDiv23 {
+	position:absolute;
+	left:629px;
+	top:889px;
+	width:600px;
+	height:800px;
+	z-index:16;
+}
+#apDiv24 {
+	position:absolute;
+	left:654px;
+	top:2069px;
+	width:676px;
+	height:315px;
+	z-index:17;
+}
+#apDiv25 {
+	position:absolute;
+	left:95px;
+	top:409px;
+	width:767px;
+	height:416px;
+	z-index:18;
+}
+-->
+</style>
+
+<script src="//load.sumome.com/" data-sumo-site-id="fda07066cfba4f31ae8252b522e644cf164ad78ede13b843d41b34dfee16ff33" async="async"></script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=644510478927409";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</head>
+
+<body>
+<div id="apDiv1">
+<h1>  <span style="vertical-align: bottom; font-weight: bold; color: #600; font-family: Georgia, 'Times New Roman', Times, serif;">#GENWWW_NYC</span></h1></div>
+
+<div id="apDiv2">
+<h1>#BestEDM Concert</a></h1>
+</div>
+
+
+
+
+<div id="apDiv3">
+<a class="twitter-timeline" href="https://twitter.com/hashtag/iLoveNYC" data-widget-id="382931166870769664">#iLoveNYC Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+<div id="apDiv4"><img src="images/heart_nyc_brick_wall.png" width="220" height="178" /></div>
+<div id="apDiv10">
+  <p><a href="mailto:info@retrodigitalnyc.com" style="text-align: right">CONTACT</a>  </p>
+  <p><a href="retro_digital_about_us_2016.html" target="_blank">ABOUT </a></p>
+  <p><a href="copyright_disclaimer_retro_genw2016.html" target="_blank">DISCLAIMER</a></p>
+  <p><a href="dmca_takedown_notice.html" target="_blank">COPYRIGHT</a></p>
+  
+  <p><a href="privacy_policy_jan2016.html" target="_blank">PRIVACY POLICY</a></p>
+  <p></p></div>
+
+
+<div id="apDiv12">
+  
+ 
+  
+  <p>TWITTER </p>
+  <p><a href="http://www.pinterest.com/genwww" target="_blank">PINTEREST</a></p>
+  <p><a href="https://soundcloud.com/genwww" target="_blank">SOUNDCLOUD</a></p>
+  <p><a href="https://www.facebook.com/genwww" target="_blank">FACEBOOK</a></p>
+<p><a href="https://www.instagram.com/genwww/" target="_blank">INSTAGRAM</a></p>
+<p><a href="http://8tracks.com/retrodigital_nyc" target="_blank">8TRACK</a></p>
+<p>&nbsp;</p>
+<p>
+<p style="color: #000; font-size: medium;"> . </p><p style="color: #000"> . </p>
+
+
+
+ </div>
+<div id="apDiv18"> © RetroDigitalNYC 2016 all rights reserved </div>
+<div id="apDiv19"></div>
+<div id="apDiv24"><div class="fb-page" data-href="https://www.facebook.com/GENWWW/" data-tabs="timeline" data-width="500" data-height="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/GENWWW/"><a href="https://www.facebook.com/GENWWW/" style="font-size: medium">GEN WWW - I love Music and Art</a></blockquote></div></div></div>
+<div id="apDiv25"></div> </body>

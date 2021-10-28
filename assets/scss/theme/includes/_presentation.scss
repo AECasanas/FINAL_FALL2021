@@ -1,0 +1,22 @@
+
+.presentation-animation{
+  position: relative;
+  display: block;
+  height: 250px;
+  width: 80%;
+  float: right;
+  background: url('../../img/fluid/slide-3.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  @include border-radius(10px);
+  &-object{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    @include opacity(0);
+  }
+}
+

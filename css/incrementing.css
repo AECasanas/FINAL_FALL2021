@@ -1,0 +1,57 @@
+/*
+	 CSS-Tricks Example
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+
+.cart-table form {
+  margin: 0px auto;
+  width:110px;
+}
+.cart-table label {
+  font: bold 20px Helvetica, sans-serif;
+  display: block;
+  float: left;
+  text-align: right;
+  padding: 5px 10px 0 0;
+  width: 140px;
+}
+.cart-table .quantity input[type=text], .pro-detail .cart-table input[type=text] {
+  width: 40px;
+  font-weight:normal;
+  padding: 3px 0 0 0;
+  text-align: center;
+  border-radius:0px;
+  margin:0px;
+  min-height:35px;
+}
+.cart-table form div {
+  overflow: hidden;
+  margin: 0 0 5px 0;
+}
+.cart-table .button {
+  margin:0px;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  float: right;
+  text-align: center;
+  position:relative;
+  background-image:url(../images/plus.png);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-color:#dadada;
+}
+
+.cart-table .dec {
+  float:left;
+  position:relative;
+  background-image:url(../images/minus.png);
+  background-repeat:no-repeat;
+}
+
+.cart-table .buttons {
+  padding: 20px 0 0 140px;
+}

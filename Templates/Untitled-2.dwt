@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title> RetroDigitalNYC </title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body,td,th {
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: xx-large;
+	color: #FFF;
+}
+body {
+	background-color: #000;
+}
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+	color: #600;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+	text-align: right;
+}
+#apDiv1 {
+	position:absolute;
+	left:269px;
+	top:164px;
+	width:600px;
+	height:132px;
+	z-index:1;
+	vertical-align: bottom;
+	padding-top: 39px;
+}
+#apDiv2 {
+	position:absolute;
+	left:269px;
+	top:303px;
+	width:569px;
+	height:369px;
+	z-index:2;
+	font-size: xx-large;
+	text-align: right;
+}
+#apDiv3 {
+	position:absolute;
+	left:870px;
+	top:230px;
+	width:321px;
+	height:436px;
+	z-index:3;
+}
+#apDiv4 {
+	position:absolute;
+	left:869px;
+	top:36px;
+	width:217px;
+	height:176px;
+	z-index:4;
+}
+-->
+</style></head>
+
+<body>
+<div id="apDiv1">
+  <h1>  <span style="vertical-align: bottom; font-weight: bold; color: #600;">RetroDigital NYC</span></h1>
+    
+ </div>
+<div id="apDiv2"><h1><a href="http://www.google.com" target="_blank">nyc playlists</a></h1>
+    <p></p>
+    
+    <h1><a href="http://www.google.com" target="_blank">shop souveneirs</a></h1>
+    <p></p>
+    
+    <h1><a href="http://www.google.com" target="_blank">main site</a></h1>
+<p></p></div>
+<div id="apDiv3">
+<a class="twitter-timeline" href="https://twitter.com/hashtag/iLoveNYC" data-widget-id="382931166870769664">#iLoveNYC Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+<div id="apDiv4"><img src="../images/heart_nyc_brick_wall.png" width="220" height="178" /></div>
+</body>
+</html>

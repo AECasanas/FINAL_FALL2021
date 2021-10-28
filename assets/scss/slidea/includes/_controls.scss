@@ -1,0 +1,94 @@
+/**
+ |--------------------------------------------------------------------------
+ | Controls
+ |--------------------------------------------------------------------------
+ */
+.slidea {
+    .slidea-control {
+        display: block;
+        position: absolute;
+        top: 50%;
+        z-index: 3;
+
+        &.slidea-next {
+            right: 0;
+
+            .slidea-control-text {
+                float: right;
+            }
+
+            .slidea-control-thumbnail{
+                @include opacity(0);
+                @include transform(translateX(0%));
+            }
+
+            &:hover{
+                .slidea-control-thumbnail {
+                    @include opacity(1);
+                    @include transform(translateX(-100%));
+                }
+            }
+        }
+        &.slidea-prev {
+            left: 0;
+
+            .slidea-control-text {
+                float: left;
+            }
+
+            .slidea-control-thumbnail{
+                @include opacity(0);
+                @include transform(translateX(-100%));
+            }
+
+            &:hover{
+                .slidea-control-thumbnail {
+                    @include opacity(1);
+                    @include transform(translateX(40px));
+                }
+            }
+        }
+
+        .slidea-control-inner {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+
+            .slidea-control-text {
+                line-height: 80px;
+                height: 80px;
+                width: 40px;
+
+                z-index: 5;
+                position: relative;
+
+                text-align: center;
+                font-weight: bold;
+
+                display: block;
+
+                @include transition(all 0.5s ease);
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            .slidea-control-thumbnail {
+                position: absolute;
+                display: block;
+                height: 100%;
+                @include transition(all 0.5s ease);
+
+                .slidea-control-image {
+                    height: 100%;
+                    width: auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}

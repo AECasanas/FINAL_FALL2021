@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+===============================================================
+							TEXT COLOR
+===============================================================
+*/
+
+.link, .color, .headlines li h5, .headline-review a:hover, .tabs .nav-tabs > .active > a, .tabs .nav-tabs > .active > a:hover, .tabs .nav-tabs > .active > a:focus, .rating > span, .sports-thumbs .text a, .widget-top3 ul li .text a, .travel-listing ul li h2, .travel-listing ul li h2 a, .video-detail h5, .multimedia .text h3, .poll-widget p, .widget-top-rated ul li a, .widget-flickr ul li a, .testimonials .flexslider p a, .copy-rights a, .skills .label, .our-services a, .our-clients .flex-direction-nav a:hover:before, .blog-post h4 a:hover, .comments ul li .reply:hover, .comments ul li h5 a:hover, .leave-reply ul li i, .table-caps, .gallery-section  .flex-direction-nav a:before, .health-news ul li h2 a, .health-news ul li h2, .hot-deals a:hover, .hot-news h4, .post-comments li a:hover, .read-more:hover, .video-slider  #bx-pager p.date  {
+	color: #4c30b8;
+}
+/*
+===============================================================
+					 BACKGROUND COLOR
+===============================================================
+*/
+.bg-color, ul.top-nav li:before, .signup ul li a:hover, .whats-new, .whts-new-hd h2, .flex-direction-nav a:before, .image-gallery .caption a:hover, .h-style:before, .jcarousel-skin-tango .jcarousel-next-horizontal, .jcarousel-skin-tango .jcarousel-prev-horizontal, .bx-controls-direction, .widget-side-ads .flexslider, .business .like-icon, .poll-widget a, .shop-product .text a, .widget-tabs .nav-tabs > .active > a, .widget-tabs .nav-tabs > .active > a:hover, .widget-tabs .nav-tabs > .active > a:focus, .widget-tabs .nav-tabs > li > a:hover, .btn-style, .testimonials, .widget-slider .flex-control-paging li a:hover, .widget-slider .flex-control-paging li a.flex-active, .widget-signin ul li .input-icon, .h-style2, .our-services i, .team figure, .author header,  .pagination-style ul li a.active, .widget-tags ul li a, .widget-tags ul li:after, .post-type .type, .event-listing .caption, .faqs .accordion-heading .accordion-toggle, .gallery .text a, .article-tabs .nav-tabs > li, .featured-post .post-type, .gallery-1 .text a, .widget-weather {
+	background-color: #4c30b8;
+}
+/*
+===============================================================
+						BORDER COLOR
+===============================================================
+*/
+.page-slider .flexslider .caption, .multimedia .text h3.border, .multimedia .image-thumbs ul li:hover, .widget-twitter ul li:hover, .blog-listing blockquote, textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, .uneditable-input:focus, .coming-soon .hasCountdown, .featured-video ul li:hover{
+	border-color: #4c30b8;
+}
+/*
+
+

@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Untitled Document</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	background-color: #333;
+	margin-left: 10px;
+	margin-top: 99px;
+}
+.twoColHybRtHdr #container {
+	width: 75%; /* the auto margins (in conjunction with a width) center the page */
+	border: thick none #000000; /* this overrides the text-align: center on the body element. */
+	background-color: #333;
+	margin-top: 169;
+	margin-right: 0px;
+	margin-bottom: 0;
+	margin-left: 99px;
+	line-height: 39px;
+} 
+.twoColHybRtHdr #header {
+	background-color: #333;
+	vertical-align: text-bottom;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 21px;
+} 
+.twoColHybRtHdr #header h1 {
+	margin: 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	padding-top: 19px;
+	padding-right: 19;
+	padding-bottom: 19px;
+	padding-left: 0;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+/* Tips for sidebar1:
+1. Since we are working in relative units, it's best not to use padding on the sidebar. It will be added to the overall width for standards compliant browsers creating an unknown actual width. 
+2. Since em units are used for the sidebar value, be aware that its width will vary with different default text sizes.
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColHybRtHdr #sidebar1 p" rule.
+*/
+.twoColHybRtHdr #sidebar1 {
+	float: right;
+	width: 12em; /* top and bottom padding create visual space within this div  */
+	background-color: #333;
+	text-align: left;
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+}
+.twoColHybRtHdr #sidebar1 h3, .twoColHybRtHdr #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+	text-align: left;
+}
+
+/* Tips for mainContent:
+1. The space between the mainContent and sidebar1 is created with the right margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this right margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+2. Be aware it is possible to cause float drop (the dropping of the non-floated mainContent area below the sidebar) if an element wider than it can contain is placed within the mainContent div. WIth a hybrid layout (percentage-based overall width with em-based sidebar), it may not be possible to calculate the exact width available. If the user's text size is larger than average, you will have a wider sidebar div and thus, less room in the mainContent div. You should be aware of this limitation - especially if the client is adding content with Contribute.
+3. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This may help avoid several IE-specific bugs.
+*/
+.twoColHybRtHdr #mainContent {
+	text-align: left;
+	font-size: medium;
+	margin-top: 0;
+	margin-right: 13em;
+	margin-bottom: 0;
+	margin-left: 10px;
+	padding-right: 69px;
+	padding-bottom: 69px;
+	padding-left: 69px;
+} 
+.twoColHybRtHdr #footer {
+	padding: 0 10px;
+	background-color: #333;
+	text-align: center;
+	font-size: large;
+} 
+.twoColHybRtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	text-align: right;
+	font-size: x-large;
+	line-height: 1px;
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+body,td,th {
+	color: #FFF;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: x-large;
+}
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #999;
+}
+a:hover {
+	text-decoration: none;
+	color: #000;
+}
+a:active {
+	text-decoration: none;
+	color: #FFF;
+	text-align: left;
+}
+.twoColHybRtHdr #container #footer #sidebar2 p {
+	text-align: center;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColHybRtHdr #sidebar1 { padding-top: 30px; }
+.twoColHybRtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it may need to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColHybRtHdr">
+
+<div id="container">
+  <div id="header"><p></p><p></p><p></p><p></p>
+    <h1>retrodigital nyc</h1>
+    <p style="text-align: right">January 25, 2016</p>
+ 
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    <div><a class="twitter-timeline" href="https://twitter.com/hashtag/iLoveNYC" data-widget-id="382931166870769664">#iLoveNYC Tweets</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+  <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+    
+    <h1><a href="http://www.google.com" target="_blank">nyc playlists</a></h1>
+    <p></p>
+    
+    <h1><a href="http://www.google.com" target="_blank">shop souveneirs</a></h1>
+    <p></p>
+    
+    <h1><a href="http://www.google.com" target="_blank">main site</a></h1>
+    <p></p>
+    
+ 
+    
+    
+    
+<!-- end #mainContent --></div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+<br class="clearfloat" />
+	<div id="footer">
+    <div id="sidebar2">
+      <p>&nbsp;</p>
+    <p>contact us</p>
+    <p>twitter</p>
+    <p>facebook</p>
+    <p>pinterest</p>
+    <p>instagram</p>
+    <p>soundcloud</p>
+    <p>8track</p>
+<p>&nbsp;</p>
+  <!-- end #sidebar1 --></div>
+    <p>
+      <!-- end #footer -->
+    </p>
+</div>
+<!-- end #container --></div>
+</body>
+</html>

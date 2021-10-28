@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;;;;;;;AAWA,oBAAqB;EACnB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,KAAK",
+"sources": ["slidea.fluid.scss"],
+"names": [],
+"file": "slidea.fluid.css"
+}
